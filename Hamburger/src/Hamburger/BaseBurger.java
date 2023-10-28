@@ -9,6 +9,7 @@ public class BaseBurger {
     private String meat;
     private double base_price;
     private double total_price;
+    private String size;
     private double discount;
 
     BaseBurger(String name, String breadRollType,String meat,double basePrice){
@@ -16,6 +17,7 @@ public class BaseBurger {
         this.breadRollType =  breadRollType;
         this.meat = meat;
         this.base_price = basePrice;
+        this.size = "Normal";
         this.discount = 0;
     }    
 
@@ -57,6 +59,9 @@ public class BaseBurger {
 
     public double getBase_price() {
         return base_price;
+    }
+    public void setSize(String size) {
+        this.size = size;
     }
 
 }
